@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+.container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.login-box {
+    background-color: rgba(0, 48, 102, 0.92);
+    padding: 30px;
+    border-radius: 18px;
+    width: 340px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.login-box input { 
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #222;
+}
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #00a8ff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.login-box button:hover {
+    background-color: #0087d1;
+}
+.login-box h1 {
+    margin-bottom: 18px;
+    font-size: 2rem;
+}
+#mensagem {
+    margin-top: 15px;
+    text-align: center;
+    min-height: 22px;
+}
+.hidden {
+    display: none;
+}
+.store-section {
+    width: 100%;
+    max-width: 1200px;
+    animation: fadeIn 0.8s ease-out;
+}
+.store-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+.store-header h1,
+.store-header p {
+    color: #ffffff;
+}
+.store-container {
+    display: grid;
+    gap: 20px;
+    padding: 0 10px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.product-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #122134;
+    padding: 22px;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+.product-card h2 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+.product-card p {
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+.product-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.product-card button:hover {
+    background-color: #0056b3;
+}
+.store-footer {
+    text-align: center;
+    padding: 20px 10px 10px;
+}
+.logout-button {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+.logout-button:hover {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
